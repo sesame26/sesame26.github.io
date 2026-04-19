@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Lexend:100,200,300,400,500,600,700,800,900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend:100,200,300,400,500,600,700,800,900&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=cqrZ5m"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=cqrZ5m" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=DsDVnJ"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=DsDVnJ" type="text/css">
 
   
   
@@ -170,15 +170,15 @@
                     <h4 class="mbr-section-subtitle mb-0 mt-2 mbr-fonts-style display-5">
                        11:00 - 12:30 Morning Session 2</h4>
                 </div>
-                <div id="bootstrap-accordion_4" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
+                <div id="bootstrap-accordion_3" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
                     <div class="card mb-3">
                         <div class="card-header" role="tab" id="headingOne">
-                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_4" aria-expanded="false" aria-controls="collapse1">
-                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Keynote by Mohammad Shahrad: Serverless, End to End</strong></h6>
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_3" aria-expanded="false" aria-controls="collapse1">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong><em>Keynote by Mohammad Shahrad: Serverless, End to End</em></strong></h6>
                                 <span class="sign mbr-iconfont mbri-arrow-down"></span>
                             </a>
                         </div>
-                        <div id="collapse1_4" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_4">
+                        <div id="collapse1_3" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_3">
                             <div class="panel-body">
                                 <p class="mbr-fonts-style panel-text display-4">Abstract: This talk explores the evolution of serverless computing and our efforts to study it through multiple lenses, including performance, efficiency, sustainability, and security. It surfaces a range of underexplored questions that extend beyond provider-centric optimizations and invites the community to pursue new research directions. Finally, it positions serverless computing as a powerful vehicle for driving innovation across the broader cloud-native ecosystem.<br><br>Bio:&nbsp;Mohammad Shahrad is an Assistant Professor of Electrical and Computer Engineering at the University of British Columbia (UBC), where he leads the Cloud Infrastructure Research for Reliability, Usability, and Sustainability (CIRRUS) Lab. Mohammad’s recent research has focused on advancing the sustainability, efficiency, and user experience of cloud-native systems. His research has been supported by industry and government partners including IBM, Rogers, Huawei, NSERC, and MITACS. Mohammad's research has won the USENIX Community Award, been deployed in production at two large cloud providers, and been featured in the press.</p>
                             </div>
@@ -186,12 +186,12 @@
                     </div>
                     <div class="card mb-3">
                         <div class="card-header" role="tab" id="headingOne">
-                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_4" aria-expanded="false" aria-controls="collapse2">
-                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Function Transplants: Accelerating Serverless Cold Starts by Plugging Processes into pooled VM-Sandboxes</strong></h6>
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_3" aria-expanded="false" aria-controls="collapse2">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong><em>Function Transplants: Accelerating Serverless Cold Starts by Plugging Processes into pooled VM-Sandboxes</em></strong></h6>
                                 <span class="sign mbr-iconfont mbri-arrow-down"></span>
                             </a>
                         </div>
-                        <div id="collapse2_4" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_4">
+                        <div id="collapse2_3" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_3">
                             <div class="panel-body">
                                 <p class="mbr-fonts-style panel-text display-4">Authors: Vasiliki Kostoula (National Technical University of Athens, Athens, Greece), Orestis Lagkas Nikolos (National Technical University of Athens, Athens, Greece), Chloe Alverti (National Technical University of Athens, Athens, Greece), Dimitris Siakavaras (National Technical University of Athens, Athens, Greece), Georgios Goumas (National Technical University of Athens, Athens, Greece), Nectarios Koziris (National Technical University of Athens, Athens, Greece)<br><br>Abstract: Serverless platforms rely on strong isolation mechanisms such as microVMs or sandboxed containers, but repeatedly constructing these environments introduces significant cold-start latency. Snapshot-based techniques reduce startup costs by restoring preinitialized environments; however, they operate at coarse granularity, restoring entire VM state and incurring overheads from memory restoration, nested page faults, and sandbox reinitialization. Our work explores function transplants, a process-level restoration approach that decouples function execution state from the underlying sandbox infrastructure. Instead of restoring full VMs, the initialized process state of a function is captured as a "transplant" and dynamically plugged into an available, lightweight VM selected from a pre-created pool. By restoring only the process-specific state into a single, generic sandbox, this approach reduces redundant initialization work and enables elastic resizing of the VM to meet function-specific requirements while preserving strong isolation guarantees. We outline the design of function transplants, including the structure of the captured process state and its integration into running VM sandboxes. Preliminary experiments suggest that process-level transplantation can reduce the amount of restored state by avoiding the restoration of sandbox- and OS-level state that are unrelated to function execution. Overall, this work represents an initial step toward finer-grained state reuse in VM-based serverless execution environments.</p>
                             </div>
@@ -199,12 +199,12 @@
                     </div>
                     <div class="card mb-3">
                         <div class="card-header" role="tab" id="headingOne">
-                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_4" aria-expanded="false" aria-controls="collapse3">
-                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Serverless Abstractions for Short-Running, Lightweight Streams</strong></h6>
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_3" aria-expanded="false" aria-controls="collapse3">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong><em>Serverless Abstractions for Short-Running, Lightweight Streams</em></strong></h6>
                                 <span class="sign mbr-iconfont mbri-arrow-down"></span>
                             </a>
                         </div>
-                        <div id="collapse3_4" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_4">
+                        <div id="collapse3_3" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_3">
                             <div class="panel-body">
                                 <p class="mbr-fonts-style panel-text display-4">Authors: Natalie Carl (Technische Universität Berlin), Niklas Kowallik (Technische Universität Berlin), Constantin Stahl (Technische Universität Berlin), Trever Schirmer (Technische Universität Berlin), Tobias Pfandzelter (Technische Universität Berlin), David Bermbach (Technische Universität Berlin)<br><br>Abstract: Serverless computing and stream processing represent two dominant paradigms for event-driven data processing, yet both make assumptions that render them inefficient for short-running, lightweight, and unpredictable streams that require stateful processing. We propose stream functions as a novel extension of the Functionas-a-Serivce model that treat short streams as the unit of  execution, state, and scaling. Stream functions process streams via an iterator-based interface, enabling seamless inter-event logic while retaining the elasticity and scale-to-zero capabilities offered by serverless platforms. Our evaluation shows that stream functions reduce the processing overhead by ~99 % compared to a mature stream processing engine in a video-processing use case. By providing  comparable performance to serverless functions with stream semantics, stream functions provide an effective and efficient abstractions for a class of workloads underserved by existing models.</p>
                             </div>
@@ -233,17 +233,17 @@
                     <h4 class="mbr-section-subtitle mb-0 mt-2 mbr-fonts-style display-5">
                        14:00 - 15:30 Afternoon Session 1</h4>
                 </div>
-                <div id="bootstrap-accordion_13" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
+                <div id="bootstrap-accordion_4" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
                     <div class="card mb-3">
                         <div class="card-header" role="tab" id="headingOne">
-                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_13" aria-expanded="false" aria-controls="collapse1">
-                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Tutorial (TBD)&nbsp;</strong></h6>
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_4" aria-expanded="false" aria-controls="collapse1">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong><em>Serverless AI Tutorial</em></strong></h6>
                                 <span class="sign mbr-iconfont mbri-arrow-down"></span>
                             </a>
                         </div>
-                        <div id="collapse1_13" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_13">
+                        <div id="collapse1_4" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_4">
                             <div class="panel-body">
-                                <p class="mbr-fonts-style panel-text display-4">Abstract: (TBD)</p>
+                                <p class="mbr-fonts-style panel-text display-4">This tutorial will be split into three 30 min tutorial sessions with the following topics:<br>- Serverless LLM Inference Service<br>- Serverless GPU Management<br>- Serverless AI and its Security and Privacy Implications<br></p>
                             </div>
                         </div>
                     </div>
